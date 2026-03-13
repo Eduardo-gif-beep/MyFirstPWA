@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA Tasks</title>
+    <title>PWA Products</title>
     <link rel="stylesheet", href="css/styles.css">
 </head>
 
@@ -12,18 +12,19 @@
     <main>
 
         <div>
-            <h1>Task Manager</h1>
+            <h1>Product Manager</h1>
             <div id="status" class="online">online</div>
         </div>
 
-        <form id="task-form">
-            <input type="text" id="task-input" placeholder="Escribe una tarea">
-            <button type="submit" id="add-Task">Agregar</button>
+        <form id="product-form">
+            <input type="text" id="product-input" placeholder="Input a product">
+            <input type="number" id="product-quantity" placeholder="Quantity">
+            <button type="submit" id="add-product">Save</button>
         </form>
 
         <section>
-            <h2>Lista de tareas</h2>
-            <ul id="task-list"></ul>
+            <h2>List of Products</h2>
+            <ul id="product-list"></ul>
         </section>
 
     </main>

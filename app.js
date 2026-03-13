@@ -8,16 +8,20 @@ if ('serviceWorker' in navigator) {
 }
 
 const status = document.getElementById("status");
-const input = document.getElementById("task-input");
-const form = document.getElementById("task-form");
+const input = document.getElementById("product-input");
+const form = document.getElementById("product-form");
+const quantity = document.getElementById("product-quantity");
 
 //Handle send form 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const texto = input.value.trim();
-    if (texto !== "") {
-        insertarTareaDB(texto);
+    const quantity1 = quantity.value;
+
+    if (texto !== "" && quantity1 !== "") {
+        insertarProductoDB(texto, quantity1);
         input.value = "";
+        quantity.value = "";
         input.focus();
     }
 });
